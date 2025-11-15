@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Guilherme</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/Captura de tela 2025-11-05 113654.png" type="image/x-icon">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+</head>
+<body>
+
+  <header class="inicio">
+    <div class="logo">Portfólio.</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre" class="home">
+      <div class="home-content">
+        <h3>Olá, eu sou</h3>
+        <h1>Guilherme <span>Ferreira</span></h1>
+        <p>Tenho 18 anos e estudo Análise e Desenvolvimento de Sistemas na Fatec. Estudante de programação
+           com foco em Back-End e conhecimento em Front-End.</p>
+        <div class="cta">
+          <a class="btn" href="#contato">Entrar em contato</a>
+          <a class="ghost" href="#projetos">Meus Projetos</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="/img/Guilherme.png" alt="Guilherme">
+      </div>
+    </section>
+
+    <section id="projetos" class="portfolio">
+  <h2>Meus <span>Projetos</span></h2>
+  <div class="portfolio-container">
+    
+    <div class="portfolio-box">
+      <img src="/img/c0mum.tech.png" alt="c0mum">
+      <div class="portfolio-layer">
+        <h4>c0mum.tech</h4>
+        <p>Site moderno e responsivo voltado para gamers. Layout dark, interface fluida e sistema de busca e categorias.
+          Tecnologias: HTML, CSS, JavaScript e PHP</p>
+      </div>
+    </div>
+    
+    <div class="portfolio-box">
+      <img src="/img/Debug-Cofffe.png" alt="DebugCoffe">
+      <div class="portfolio-layer">
+        <h4>DebugCoffe (Imagem)</h4>
+        <p>Projeto conceitual que une café e programação. Design elegante, visual escuro e navegação suave.
+          Tecnologias: HTML, CSS e JavaScript.</p>
+      </div>
+    </div>
+    
+    <div class="portfolio-box">
+      <video src="/img/Gravação de Tela 2025-11-15 170747.mp4" controls></video>
+      <div class="portfolio-layer">
+        <h4>Projeto Cursos Fatec</h4>
+        <p>Projeto Feito para apresentação de cursos da FATEC para o ensino médio,
+          site responsivo. Feito com HTML, CSS e JavaScript
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section id="contato" class="contact">
+      <h2>Fale <span>Comigo</span></h2>
+      <form method="POST" id="contato">
+        <div class="input-box">
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="input-box">
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="input-box">
+          <label for="subject">Assunto:</label>
+          <input type="text" name="subject" id="subject" required>
+        </div>
+        <div class="input-box">
+          <textarea name="mensagem" placeholder="Escreva sua mensagem aqui..." id="mensagem"></textarea>
+        </div>
+        <div class="btn-container">
+          <button class="btn" id="enviar" type="submit">Enviar Mensagem</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="links" class="links">
+      <h2>Meus <span>Links</span></h2>
+      <div class="links-list">
+        <a href="https://github.com/c0mum" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/guilherme-f-9aab632b2/" target="_blank">Linkedin</a>
+        <a href="https://discord.com/channels/@me" target="_blank">Discord</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>&copy; 2025 Guilherme Ferreira - Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#">^</a>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+      (function(){
+        emailjs.init("yGx1WATAXA_uJacFg");
+      })();
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
